@@ -1,0 +1,104 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: white;
+    color: #111;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+  }
+  
+  .logo img {
+    width: 40px;
+  }
+  
+  /* Navigation */
+  nav a {
+    text-decoration: none;
+    color: #111;
+    margin-left: 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero section */
+  .hero {
+    background-image: url('space-background.jpg'); /* Usa tu propia imagen */
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  
+  /* Cards */
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: white;
+  }
+  
+  .card {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1.2rem;
+    border-radius: 8px;
+    width: 280px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .card h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card button {
+    background-color: #eee;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Footer/info section */
+  .footer-info {
+    margin: 2rem auto;
+    max-width: 700px;
+    background-color: #222;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+      
