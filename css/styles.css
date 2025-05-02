@@ -10,6 +10,17 @@ body {
     background-position: center;
     color: white;
   }
+
+  .hero-wrapper-2 {
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    color: black;
+  }
+
+  .title-header{
+    color: white;
+  }
   
   header {
     display: flex;
