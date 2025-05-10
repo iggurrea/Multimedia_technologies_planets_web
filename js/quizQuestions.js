@@ -2,18 +2,18 @@ const questions = [
   {
     question: "Which planet is known as the Red Planet?",
     options: ["Earth", "Mars", "Jupiter", "Saturn"],
-    answer: "Mars"
+    answer: "Mars",
   },
   {
     question: "What is the largest planet in our solar system?",
     options: ["Saturn", "Earth", "Jupiter", "Neptune"],
-    answer: "Jupiter"
+    answer: "Jupiter",
   },
   {
     question: "How many moons does Earth have?",
     options: ["1", "2", "3", "None"],
-    answer: "1"
-  }
+    answer: "1",
+  },
 ];
 
 let currentQuestionIndex = 0;
@@ -30,7 +30,9 @@ function showQuestion(index) {
   questionContainer.innerHTML = `
     <h2>${q.question}</h2>
     <ul>
-      ${q.options.map(opt => `
+      ${q.options
+        .map(
+          (opt) => `
         <li>
           <label>
             <input type="radio" name="answer" value="${opt}" 
@@ -38,13 +40,17 @@ function showQuestion(index) {
             ${opt}
           </label>
         </li>
-      `).join("")}
+      `
+        )
+        .join("")}
     </ul>
   `;
 
   prevBtn.style.display = index > 0 ? "inline-block" : "none";
-  nextBtn.style.display = index < questions.length - 1 ? "inline-block" : "none";
-  submitBtn.style.display = index === questions.length - 1 ? "inline-block" : "none";
+  nextBtn.style.display =
+    index < questions.length - 1 ? "inline-block" : "none";
+  submitBtn.style.display =
+    index === questions.length - 1 ? "inline-block" : "none";
   resultContainer.innerHTML = "";
 }
 
@@ -78,11 +84,12 @@ submitBtn.addEventListener("click", () => {
     if (userAnswers[i] === q.answer) correct++;
   });
 
-  let message = correct === questions.length
-    ? "🚀 Excellent explorer! All answers correct!"
-    : correct >= questions.length / 2
-    ? "🛰️ Not bad! You’re on your way to the stars."
-    : "☄️ Keep learning! The universe is waiting.";
+  let message =
+    correct === questions.length
+      ? "🚀 Excellent explorer! All answers correct!"
+      : correct >= questions.length / 2
+      ? "🛰️ Not bad! You’re on your way to the stars."
+      : "☄️ Keep learning! The universe is waiting.";
 
   resultContainer.innerHTML = `
     <h3>${message}</h3>
