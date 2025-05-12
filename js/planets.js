@@ -40,8 +40,18 @@ function initMercuryModel() {
 
   const geometry = new THREE.SphereGeometry(1, 32, 32);
   const textureLoader = new THREE.TextureLoader();
-  const texture = textureLoader.load('../textures/mercury.jpg');
-  const material = new THREE.MeshStandardMaterial({ map: texture });
+  const texture = textureLoader.load(
+  '../textures/mercury.jpg',
+  () => console.log('✅ Textura cargada correctamente'),
+  undefined,
+  (err) => console.error('❌ Error al cargar la textura', err)
+);
+
+
+  const material = new THREE.MeshPhongMaterial({ map: texture });
+  const ambientLight = new THREE.AmbientLight(0xffffff, 0.4); // luz suave global
+scene.add(ambientLight);
+
   const mercury = new THREE.Mesh(geometry, material);
   scene.add(mercury);
 
