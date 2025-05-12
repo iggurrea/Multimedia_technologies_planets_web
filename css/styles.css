@@ -170,3 +170,52 @@ nav a {
 #result-container h3 {
   margin-top: 2rem;
 }
+
+/* Planets */ 
+
+#planets-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: white;
+}
+
+.planet-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.planet-model {
+  width: 300px;
+  height: 300px;
+}
+
+.planet-info {
+  position: relative;
+}
+
+.planet-info h2 {
+  margin-top: 0;
+}
+
+.planet-info p {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.sound-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+

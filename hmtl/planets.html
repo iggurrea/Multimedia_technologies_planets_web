@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Planets</title>
-    <link rel="stylesheet" href="../css/styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Planets</title>
+  <link rel="stylesheet" href="../css/styles2.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r148/three.min.js"></script>
 </head>
-
 <body>
+  <header>
+    <div class="logo">
+      <img src="../images/planet-icon.png" alt="Logo" />
+      <h1 class="title-header">Planets</h1>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Solar System</a>
+      <a href="#">Planets</a>
+      <a href="#">Quiz</a>
+    </nav>
+  </header>
 
-    <div class="hero-wrapper-2">
-        <header>
-            <div class="logo">
-                <img src="../planet-icon.png" alt="Space Icon" />
-                <h1 class="title-header">Planets</h1>
-            </div>
-            <nav>
-                <a href="../index.html">Home</a>
-                <a href="./solarSystem.html">Solar System</a>
-                <a href="./planets.html">Planets</a>
-                <a href="./quiz.html">Quiz</a>
-            </nav>
-        </header>
+  <main id="planets-container">
+    <section class="planet-card">
+      <div class="planet-model" id="mercury-model"></div>
+      <div class="planet-info card-black">
+        <h2>Mercury</h2>
+        <p class="planet-text short">
+          Mercury is the closest planet to the Sun and the smallest in the Solar System. It has a very thin atmosphere and no moons. It is a rocky planet with a large iron core.
+        </p>
+        <button class="toggle-text">Show more ↓</button>
+        <button class="sound-button" data-audio="../audio/mercury.mp3">🔊</button>
+      </div>
+    </section>
+  </main>
 
+  <script src="../js/planets.js"></script>
 </body>
-
 </html>
