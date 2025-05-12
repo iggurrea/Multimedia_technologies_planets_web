@@ -72,7 +72,7 @@ scene.add(ambientLight);
 
 initMercuryModel();*/
 
-function createPlanetModel(planetId, texturePath, rotationSpeed = 0.005) {
+function createPlanetModel(planetId, texturePath, rotationSpeed = 0.0045) {
   const container = document.getElementById(planetId);
   if (!container) return;
 
