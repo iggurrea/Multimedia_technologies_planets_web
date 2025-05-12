@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Planets</title>
   <link rel="stylesheet" href="../css/styles2.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r148/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
 </head>
+
 <body>
   <header>
     <div class="logo">
@@ -22,13 +24,492 @@
     </nav>
   </header>
 
+  <!-- Mercury -->
   <main id="planets-container">
     <section class="planet-card">
       <div class="planet-model" id="mercury-model"></div>
       <div class="planet-info card-black">
         <h2>Mercury</h2>
         <p class="planet-text short">
-          Mercury is the closest planet to the Sun and the smallest in the Solar System. It has a very thin atmosphere and no moons. It is a rocky planet with a large iron core.
+          Mercury, the smallest planet in our solar system and the closest to the Sun, is only slightly larger than
+          Earth's Moon. From its surface, the Sun appears over three times larger than it does from Earth, and the
+          sunlight is up to seven times brighter. Temperatures on Mercury vary drastically, reaching 800°F (430°C)
+          during the day and plummeting to -290°F (-180°C) at night due to the absence of an atmosphere to retain heat.
+
+          Despite its proximity to the Sun, Mercury is not the hottest planet in the solar system, a title claimed by
+          Venus due to its dense atmosphere. However, Mercury is the fastest planet, completing an orbit around the Sun
+          every 88 Earth days, traveling at a speed of nearly 29 miles (47 kilometers) per second.
+
+          Named after the swift Roman god, Mercury’s environment is not suitable for life as we know it, due to extreme
+          temperatures and solar radiation. With a radius of 1,516 miles (2,440 kilometers), Mercury is just over
+          one-third the size of Earth. If Earth were the size of a nickel, Mercury would be roughly the size of a
+          blueberry. Positioned at an average distance of 36 million miles (58 million kilometers) from the Sun, it is
+          0.4 astronomical units away, with sunlight taking 3.2 minutes to reach it.
+
+          Mercury's orbit is highly elliptical, ranging from 29 million miles (47 million kilometers) to 43 million
+          miles (70 million kilometers) from the Sun. It spins slowly on its axis, completing one rotation every 59
+          Earth days. Unlike most planets, Mercury’s rotations are not accompanied by sunrise and sunset in a typical
+          manner. Some parts of the planet see the Sun rise briefly, set, and rise again. A full day on Mercury (one
+          complete day-night cycle) lasts 176 Earth days, equivalent to just over two years on the planet. Its axis is
+          tilted by only 2 degrees, meaning it does not experience seasons.
+
+          Mercury has no moons or rings and formed about 4.5 billion years ago when gas and dust coalesced under
+          gravity. It has a dense core, composed largely of metal, with evidence of partial melting, and a thin crust
+          and mantle. The planet’s surface is heavily cratered, resembling Earth’s Moon, with impacts from asteroids and
+          comets throughout its history. Some impact basins, like Caloris (960 miles or 1,550 kilometers in diameter),
+          were formed by asteroid collisions. The surface is mostly greyish-brown, with bright streaks known as "crater
+          rays" formed by meteoroid impacts.
+
+          Mercury's extreme temperature fluctuations are exacerbated by its lack of atmosphere. However, water ice may
+          exist in permanently shadowed craters at the poles. The planet’s thin exosphere, instead of a true atmosphere,
+          consists of atoms blown off the surface by solar wind and meteoroid strikes. This exosphere is primarily made
+          up of oxygen, sodium, hydrogen, helium, and potassium.
+
+          Mercury's magnetic field is weak, about 1% of Earth's, but it still interacts with the solar wind, sometimes
+          creating intense magnetic tornadoes that funnel hot plasma down to the surface. When these ions strike the
+          planet, they knock off atoms, sending them looping into the sky.
+        </p>
+        <button class="toggle-text">Show more ↓</button>
+        <button class="sound-button" data-audio="../audio/mercury.mp3">🔊</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Venus -->
+  <main id="planets-container">
+    <section class="planet-card">
+      <div class="planet-model" id="mercury-model"></div>
+      <div class="planet-info card-black">
+        <h2>Venus</h2>
+        <p class="planet-text short">
+          Venus, the second planet from the Sun, is Earth's closest planetary neighbor and the hottest planet in our
+          solar system. Sometimes called Earth's twin, Venus shares similar size and structure with our planet, though
+          its harsh environment makes it vastly different. The thick atmosphere of Venus traps heat through a runaway
+          greenhouse effect, making surface temperatures high enough to melt lead. Beneath its dense clouds, Venus has
+          volcanoes and deformed mountains.
+
+          Named after the ancient Roman goddess of love and beauty, Venus is the only planet in the solar system named
+          after a female deity. Its atmosphere is primarily composed of carbon dioxide, with clouds of sulfuric acid,
+          contributing to the extreme heat and pressure. Despite its inhospitable surface, scientists have speculated
+          that certain regions of Venus, about 30 miles above its surface, could potentially host microbial life, given
+          the right conditions. Some researchers have even suggested that microbial life might be the cause of
+          mysterious streaks in Venus' clouds that absorb ultraviolet radiation.
+
+          Venus orbits the Sun at a distance of about 67 million miles (108 million kilometers), taking 225 Earth days
+          to complete one orbit. It is similar in size to Earth, with a diameter of approximately 7,521 miles (12,104
+          kilometers). From Earth, Venus appears as the brightest object in the night sky after the Moon. Its phases,
+          like those of the Moon, were first observed by Galileo, providing key evidence for the heliocentric model of
+          the solar system.
+
+          Venus’ day is longer than its year, taking 243 Earth days to complete one rotation. Interestingly, it rotates
+          in the opposite direction to most other planets, meaning the Sun rises in the west and sets in the east. Venus
+          also has no seasons, as its axial tilt is only 3 degrees, unlike Earth’s 23-degree tilt.
+
+          Venus is one of only two planets in the solar system without moons. However, it does have a quasi-satellite,
+          Zoozve, which orbits the Sun while staying near Venus. Discovered in 2002, Zoozve is the first identified
+          quasi-satellite of a major planet. It is thought to have been a companion to Venus for thousands of years.
+
+          The surface of Venus is a harsh, rocky landscape marked by volcanoes, mountains, and valleys, with some
+          volcanic features named after women. Notably, Venus has the fewest impact craters of any rocky planet. Some
+          surface features, such as "pancake" domes and "tick" domes, were likely formed by volcanic activity. The
+          planet’s atmosphere, while mainly composed of carbon dioxide, is also home to extreme temperatures and
+          pressures, with sulfuric acid clouds creating a highly corrosive environment at the surface.
+
+          Venus lacks a magnetic field like Earth’s, instead generating a weak, induced magnetic field. This magnetic
+          field is created by the interaction of the Sun's magnetic field with the electrically charged particles in
+          Venus’ ionosphere. The solar wind pushes this magnetic field into a teardrop shape, surrounding the planet.
+
+          Venus offers a compelling case for studying planetary formation and habitability. Despite its extreme
+          conditions, its similarities to Earth make it an important subject for astrobiologists, who are eager to
+          investigate its mysterious atmosphere and history. Understanding Venus may help us better comprehend the
+          formation of rocky planets and the potential for life elsewhere in the universe.
+        </p>
+        <button class="toggle-text">Show more ↓</button>
+        <button class="sound-button" data-audio="../audio/mercury.mp3">🔊</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Earth -->
+  <main id="planets-container">
+    <section class="planet-card">
+      <div class="planet-model" id="mercury-model"></div>
+      <div class="planet-info card-black">
+        <h2>Earth</h2>
+        <p class="planet-text short">
+          Earth is the fifth largest planet in the solar system, slightly larger than Venus, and is the largest of the
+          four terrestrial planets made of rock and metal closest to the Sun. Despite its size, Earth is unique because
+          it is the only planet in the solar system with liquid water on its surface, making it hospitable to life.
+          Unlike the other planets, Earth's name does not derive from Greek or Roman mythology but comes from Old
+          English and Germanic roots, meaning simply "the ground." This name is over a thousand years old.
+
+          Earth's ability to support life is due to its favorable temperature and chemical makeup. Most of the planet is
+          covered in liquid water, which has existed for billions of years, providing a suitable environment for life to
+          flourish. However, the ongoing impacts of climate change are beginning to alter these features. Earth is also
+          the largest of the terrestrial planets, with an equatorial diameter of 12,760 kilometers (7,926 miles).
+          Located an average of 93 million miles (150 million kilometers) from the Sun, Earth is exactly one
+          astronomical unit away from it, providing a standard measure for comparing planetary distances.
+
+          Earth completes a rotation every 23.9 hours, and it takes 365.25 days to orbit the Sun, causing the addition
+          of a leap day every four years to keep our calendar in sync. The tilt of Earth's axis by 23.4 degrees leads to
+          the planet's seasonal changes, with varying degrees of solar heating between the northern and southern
+          hemispheres. The Moon, Earth's only natural satellite, plays a critical role in stabilizing the planet's axial
+          tilt and providing a more stable climate.
+
+          The Moon itself is believed to have formed from a collision between Earth and a massive object billions of
+          years ago. Earth's Moon, the fifth-largest in the solar system, is located about 384,400 kilometers (238,855
+          miles) away. Interestingly, Earth sometimes temporarily hosts small asteroids that orbit the planet before
+          returning to their orbit around the Sun.
+
+          Unlike other planets, Earth has no rings. It was formed about 4.5 billion years ago when gas and dust clumped
+          together to form the planet. Earth's structure consists of four main layers: an iron-nickel core, an outer
+          core, a mantle, and a crust. The inner core, which is solid, is surrounded by a molten outer core, while the
+          mantle is a hot, viscous layer that makes up the majority of Earth's volume. The crust is the planet's
+          outermost layer, which varies in thickness from about 5 kilometers beneath the oceans to 30 kilometers on
+          land.
+
+          The planet's surface, like that of Mars and Venus, features mountains, volcanoes, and valleys. Earth’s
+          tectonic plates are constantly shifting, leading to earthquakes and the formation of mountain ranges. Around
+          70% of Earth's surface is covered by oceans, which contain nearly all of the planet's water and hide many
+          volcanoes beneath their depths.
+
+          Earth's atmosphere consists primarily of nitrogen (78%) and oxygen (21%), with trace amounts of other gases
+          such as carbon dioxide. This atmosphere not only shields Earth from harmful solar radiation but also protects
+          it from meteoroids. The planet's magnetic field, generated by its molten core, creates the aurorae near the
+          poles as charged particles from the Sun interact with the atmosphere. This magnetic field also governs compass
+          directions, with the Earth's magnetic poles flipping roughly every 400,000 years, though this does not appear
+          to affect life on Earth.
+
+          In conclusion, Earth's combination of water, atmosphere, and magnetic field make it a rare and unique planet,
+          supporting a diversity of life that continues to evolve amidst the challenges posed by climate change.
+        </p>
+        <button class="toggle-text">Show more ↓</button>
+        <button class="sound-button" data-audio="../audio/mercury.mp3">🔊</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Mars -->
+  <main id="planets-container">
+    <section class="planet-card">
+      <div class="planet-model" id="mercury-model"></div>
+      <div class="planet-info card-black">
+        <h2>Mars</h2>
+        <p class="planet-text short">
+          Mars, the fourth planet from the Sun, named The Mysterious Red Planet, is a cold, dusty desert world with a
+          very thin atmosphere. Despite its barren appearance, Mars is a dynamic planet marked by seasons, weather
+          patterns, polar ice caps, extinct volcanoes, and vast canyons. Its rusty red color, caused by oxidized iron
+          minerals in the soil, has earned it the nickname “The Red Planet.” Ancient civilizations were fascinated by
+          Mars — the Romans named it after their god of war, while the Egyptians called it “Her Desher,” meaning “the
+          red one.”
+
+          Mars is one of the most studied celestial bodies in our solar system. It’s the only planet beyond Earth where
+          rovers have explored the surface, revealing a past where water once flowed freely and the atmosphere was
+          thicker and more Earth-like billions of years ago. Though scientists don't expect to find life there today,
+          they continue to search for evidence of ancient microbial life.
+
+          In size, Mars is about half the diameter of Earth, with a radius of 3,390 kilometers (2,106 miles). If Earth
+          were a nickel, Mars would be the size of a raspberry. It orbits the Sun at an average distance of 228 million
+          kilometers (142 million miles), taking about 687 Earth days — or 669.6 Martian sols — to complete a year. A
+          Martian day, or "sol," lasts 24.6 hours, slightly longer than an Earth day.
+
+          Mars experiences seasons due to its axial tilt of 25 degrees, similar to Earth's 23.4 degrees. However,
+          because of its elliptical orbit, its seasons are uneven in duration. Northern spring (southern autumn) is the
+          longest season at 194 sols, while northern autumn (southern spring) is the shortest at 142 sols.
+
+          Orbiting Mars are two small moons — Phobos and Deimos — thought to be captured asteroids. Irregularly shaped
+          due to their low mass, these moons were named after the horses of the Greek god Ares. Phobos, the larger moon,
+          is slowly spiraling toward Mars and is expected to crash into the planet or break apart in about 50 million
+          years, possibly forming a temporary ring. Deimos, which is smaller and orbits farther away, has a smoother
+          surface due to loose dust filling its craters.
+
+          Mars lacks a global magnetic field today, though regions of the crust retain magnetism, suggesting the planet
+          once had one billions of years ago. It also lacks planetary rings — at least for now. If Phobos breaks apart,
+          it could form a ring of debris around the planet.
+
+          Structurally, Mars is composed of a dense iron-nickel-sulfur core, a rocky mantle, and a crust rich in
+          elements like iron, magnesium, aluminum, and calcium. Its surface features an impressive variety of colors —
+          browns, tans, and reds — shaped over eons by volcanic activity, meteor impacts, tectonic shifts, and massive
+          dust storms.
+
+          Among Mars' most iconic features is Olympus Mons, the largest volcano in the solar system, standing three
+          times taller than Mount Everest. Nearby, Valles Marineris — a canyon system over 4,800 kilometers (3,000
+          miles) long — dwarfs Earth’s Grand Canyon in scale and depth. Evidence of ancient rivers, lakebeds, and flood
+          channels reveals that Mars once had flowing water, though today water exists mostly as ice in polar regions or
+          as salty brines that seasonally seep down crater walls.
+
+          The Martian atmosphere is thin and primarily composed of carbon dioxide, with nitrogen and argon present in
+          smaller amounts. This sparse atmosphere offers little protection from space debris or temperature extremes,
+          which can range from 20°C (70°F) to -153°C (-225°F). During the day, temperatures can vary greatly from the
+          ground to head height due to rapid heat loss.
+
+          Dust storms, sometimes global in scale, can envelop the planet and take months to clear. The sky, tinted by
+          fine particles in the air, appears more hazy red than the familiar blue skies of Earth.
+
+          Despite its harsh conditions, Mars remains a prime target in the search for ancient life and future human
+          exploration. With each new mission, we uncover more of its secrets and get closer to understanding our
+          neighboring world.
+        </p>
+        <button class="toggle-text">Show more ↓</button>
+        <button class="sound-button" data-audio="../audio/mercury.mp3">🔊</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Jupiter -->
+  <main id="planets-container">
+    <section class="planet-card">
+      <div class="planet-model" id="mercury-model"></div>
+      <div class="planet-info card-black">
+        <h2>Jupiter</h2>
+        <p class="planet-text short">
+          Jupiter, the largest planet in our solar system, named too 'The Giant of Extremes', is a world of astonishing
+          contrasts and dynamic phenomena. With a radius of 69,911 kilometers (43,440.7 miles), it’s about 11 times
+          wider than Earth—if hollow, it could contain over 1,000 Earths. Despite its massive size, Jupiter has the
+          shortest day of all planets, completing a rotation every 9.9 hours. It formed roughly 4.6 billion years ago
+          from the residual gas and dust left behind after the Sun's birth, making it the oldest planet in the solar
+          system.
+
+          Jupiter’s swirling atmosphere, composed primarily of hydrogen and helium, is adorned with bands of clouds in
+          alternating colors and directions. The darker bands, called belts, and the lighter ones, known as zones, are
+          powerful jet streams blowing in opposite directions. Among these dynamic patterns lies the Great Red Spot, a
+          colossal storm larger than Earth that has persisted for centuries. These atmospheric features are just the
+          surface of a planet with no true solid ground—what lies beneath is a vast, violent ocean of liquid hydrogen
+          and extreme pressure.
+
+          Named after the king of the Roman gods, Jupiter dominates not only in size but also in its complex system of
+          95 known moons. Its four largest—Io, Europa, Ganymede, and Callisto—were first spotted by Galileo Galilei in
+          1610 and are known as the Galilean moons. Each of these satellites is unique: Io is riddled with active
+          volcanoes, Ganymede is the largest moon in the solar system, Callisto hints at geologic activity, and Europa
+          may host a subsurface ocean with the potential for life.
+
+          Despite its inhospitable atmosphere, which features extreme temperatures and crushing pressure, Jupiter is
+          central to our understanding of planetary formation. Data from NASA’s Juno mission revealed a fuzzy, partially
+          dissolved core much larger than expected, lacking a distinct boundary from the surrounding metallic hydrogen.
+          The deep atmosphere is composed of three cloud layers—ammonia ice, ammonium hydrosulfide, and water
+          ice—stretching across 71 kilometers (44 miles). Winds can reach 539 km/h (335 mph), and storms such as the
+          Great Red Spot can plunge 500 kilometers (300 miles) beneath the cloud tops.
+
+          Juno also uncovered long-lasting cyclones at both poles arranged in unique geometric patterns—eight in an
+          octagon in the north and five in a pentagon in the south. These massive cyclones are held in place by central
+          polar vortices, preventing them from drifting poleward. Jupiter’s belts and zones extend as deep as 3,200
+          kilometers (2,000 miles), revealing layered convection patterns that mirror the movements of Earth’s oceans.
+
+          Another surprising discovery: Jupiter has a ring system, faint and dusty, first detected in 1979 by Voyager 1.
+          These rings are made of particles likely ejected by impacts on the planet’s small inner moons.
+
+          The planet's magnetosphere is unmatched in strength, stretching up to 3 million kilometers (2 million miles)
+          toward the Sun and trailing 1 billion kilometers (600 million miles) behind it—reaching beyond Saturn's orbit.
+          This magnetic force field traps charged particles and creates intense radiation, posing serious challenges for
+          spacecraft. It also powers breathtaking auroras at Jupiter's poles, some of the brightest and most energetic
+          in the solar system.
+
+          Although Jupiter itself is unlikely to support life, its moons—particularly Europa—offer promising
+          environments for future exploration. Beneath Europa’s icy shell may lie a vast ocean capable of supporting
+          microbial life, making Jupiter not just a planetary marvel, but a cornerstone in the search for life beyond
+          Earth.
+
+        </p>
+        <button class="toggle-text">Show more ↓</button>
+        <button class="sound-button" data-audio="../audio/mercury.mp3">🔊</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Saturn -->
+  <main id="planets-container">
+    <section class="planet-card">
+      <div class="planet-model" id="mercury-model"></div>
+      <div class="planet-info card-black">
+        <h2>Saturn</h2>
+        <p class="planet-text short">
+          Saturn, the sixth planet from the Sun, named too 'The Ringed Giant of the Solar System', is the second-largest
+          planet in our solar system and a spectacular
+          example of the beauty and mystery of the cosmos. Much like its fellow gas giant, Jupiter, Saturn is composed
+          primarily of hydrogen and helium, forming a massive, swirling sphere without a solid surface.
+
+          What truly sets Saturn apart is its extraordinary ring system—the most extensive and visually stunning of any
+          planet. These rings, made up of billions of ice and rock particles, range in size from grains of dust to
+          house-sized chunks, and even some as large as mountains. They orbit Saturn at varying speeds and stretch out
+          up to 175,000 miles (282,000 kilometers) from the planet’s surface, though they are only about 30 feet (10
+          meters) thick in most areas. Among them lies the prominent Cassini Division, a 2,920-mile-wide (4,700
+          kilometers) gap separating Rings A and B.
+
+          Saturn’s allure extends beyond its rings to its diverse and intriguing collection of moons. As of June 8,
+          2023, Saturn boasts 146 confirmed moons, with more awaiting official recognition. These moons include Titan,
+          shrouded in thick, smoggy clouds and home to methane lakes, and Enceladus, which sprays jets of water from its
+          subsurface ocean—both considered among the most promising places in the solar system to harbor life.
+
+          Despite the potential on its moons, Saturn itself is an inhospitable world. Its environment is extreme, with
+          high pressures, low temperatures, and violent storms that would make life as we know it impossible.
+          Nevertheless, the possibility of life in the oceans beneath the icy crusts of moons like Titan and Enceladus
+          keeps scientists intrigued.
+
+          Saturn is a colossal planet, approximately 9 times wider than Earth with a diameter of 74,897 miles (120,500
+          kilometers). If Earth were the size of a nickel, Saturn would be about the size of a volleyball. It sits an
+          average of 886 million miles (1.4 billion kilometers) from the Sun—about 9.5 times the Earth-Sun
+          distance—meaning sunlight takes around 80 minutes to reach it.
+
+          The planet spins rapidly, completing a full rotation in just 10.7 hours, making its day one of the shortest in
+          the solar system. Its year, however, is long, lasting about 29.4 Earth years. Like Earth, Saturn experiences
+          seasons due to its axial tilt of 26.73 degrees.
+
+          Beneath Saturn’s upper layers lies a dense core of metal and rock, surrounded by metallic hydrogen and a vast
+          layer of liquid hydrogen. Despite its immense mass, Saturn’s average density is so low that it would float in
+          water, hypothetically.
+
+          Its atmosphere is dynamic, characterized by fast winds, jet streams, and massive storms. Winds near the
+          equator can reach speeds of 1,600 feet per second (500 meters per second)—significantly faster than Earth’s
+          most powerful hurricanes. A unique hexagonal storm system, first spotted by the Voyager spacecraft and studied
+          in detail by Cassini, crowns Saturn’s north pole. This six-sided jet stream spans roughly 20,000 miles (30,000
+          kilometers) and surrounds a powerful cyclone.
+
+          Saturn’s magnetosphere, while smaller than Jupiter’s, is still 578 times stronger than Earth’s. It encloses
+          the planet, its rings, and most of its moons, influencing electrically charged particles in space. The planet
+          also displays brilliant aurorae, some of which, unlike Earth’s, are caused not by solar wind but by particles
+          from its own moons and rapid magnetic rotation—phenomena still not fully understood.
+
+          Known since ancient times, Saturn is named after the Roman god of agriculture and wealth, and as the most
+          distant planet visible to the naked eye, it has inspired wonder for millennia. With its majestic rings,
+          mysterious moons, and dynamic atmosphere, Saturn remains one of the most captivating objects in our solar
+          system.
+
+        </p>
+        <button class="toggle-text">Show more ↓</button>
+        <button class="sound-button" data-audio="../audio/mercury.mp3">🔊</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Uranus -->
+  <main id="planets-container">
+    <section class="planet-card">
+      <div class="planet-model" id="mercury-model"></div>
+      <div class="planet-info card-black">
+        <h2>Uranus</h2>
+        <p class="planet-text short">
+        <p>Uranus, the seventh planet from the Sun, named too 'The Tilted Ice Giant of the Solar System' is an icy,
+          distant world that holds a special place in the solar
+          system for its unique rotation and cold, mysterious atmosphere. Often referred to as an "ice giant" alongside
+          Neptune, Uranus is composed primarily of water, ammonia, and methane ices, layered around a rocky core and
+          surrounded by an atmosphere of hydrogen and helium.</p>
+
+        <p>What truly sets Uranus apart is its extreme axial tilt of about 98 degrees, causing it to rotate on its side.
+          This makes it the only planet in the solar system to have such a dramatic orientation, resulting in bizarre
+          and extreme seasons—each lasting over 20 Earth years. For nearly a quarter of its 84-year orbit, one pole is
+          bathed in constant sunlight while the other is plunged into complete darkness.</p>
+
+        <p>Discovered in 1781 by astronomer William Herschel, Uranus was the first planet found with a telescope.
+          Initially mistaken for a star or comet, its planetary nature was later confirmed by astronomers like Johann
+          Bode, who also proposed its mythological name. Departing from Roman mythology, Uranus was named after the
+          ancient Greek god of the sky, the father of Saturn.</p>
+
+        <p>Uranus is a pale blue-green planet, a color caused by methane in its upper atmosphere which absorbs red light
+          and reflects blue. Despite its relatively featureless appearance through most telescopes, Uranus is a dynamic
+          planet with powerful winds reaching speeds of up to 560 miles per hour (900 kilometers per hour) and a
+          complex, layered atmosphere. Surprisingly, it is also one of the coldest places in the solar system, with
+          temperatures plunging to -371°F (-224°C).</p>
+
+        <p>Orbiting Uranus is a collection of 28 known moons, many named after characters from the works of William
+          Shakespeare and Alexander Pope—such as Titania, Oberon, and Miranda. These moons vary widely in size and
+          composition, with several showing signs of geological activity and intriguing surface features. Uranus also
+          has 13 known rings, far fainter and narrower than Saturn’s but still fascinating. The inner rings are dark and
+          thin, while two outer rings are more colorful, with one appearing reddish and the other bright blue.</p>
+
+        <p>Uranus is enormous—four times wider than Earth—with a diameter of about 31,763 miles (51,118 kilometers).
+          Despite its size, it’s the second least dense planet in the solar system after Saturn. If Earth were the size
+          of a nickel, Uranus would be roughly the size of a softball. It sits about 1.8 billion miles (2.9 billion
+          kilometers) from the Sun, or 19 times farther than Earth, meaning sunlight takes around 2 hours and 40 minutes
+          to reach it.</p>
+
+        <p>A day on Uranus lasts approximately 17 hours, but its long journey around the Sun takes 84 Earth years to
+          complete. Like Venus, Uranus rotates in the opposite direction of most other planets—a retrograde rotation
+          likely caused by a massive collision early in its history, which also explains its extreme tilt.</p>
+
+        <p>Beneath its hazy atmosphere lies a slushy, dense mix of icy materials and a rocky core. Temperatures at the
+          core may reach as high as 9,000°F (5,000°C), despite the frigid outer layers. Uranus’ interior doesn't radiate
+          much heat, which further contributes to its status as the coldest planet in the solar system.</p>
+
+        <p>The planet’s magnetic field is just as unusual as its rotation. It is tilted about 60 degrees from the axis
+          and is offset from the planet’s center, resulting in an irregular and twisted magnetosphere. This skewed
+          magnetic field causes auroras on Uranus that differ significantly from those seen on Earth or Jupiter. Unlike
+          other planets, these auroras are often not aligned with the magnetic poles, and scientists continue to study
+          their mysterious behavior.</p>
+
+        <p>Though the harsh conditions make Uranus inhospitable for life as we know it, the planet continues to
+          captivate
+          scientists and stargazers alike. Its curious tilt, icy atmosphere, elusive rings, and theatrical moons offer a
+          glimpse into the diverse and dynamic nature of the outer solar system. As we look to future missions, Uranus
+          remains one of the most intriguing destinations waiting to be explored in greater detail.</p>
+        </p>
+        <button class="toggle-text">Show more ↓</button>
+        <button class="sound-button" data-audio="../audio/mercury.mp3">🔊</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Neptune -->
+  <main id="planets-container">
+    <section class="planet-card">
+      <div class="planet-model" id="mercury-model"></div>
+      <div class="planet-info card-black">
+        <h2>Neptune</h2>
+        <p class="planet-text short">
+          Neptune, the eighth and farthest known planet from the Sun, named to 'The Mysterious Ice Giant at the Edge of
+          the Solar System' is a dynamic and mysterious world cloaked in deep
+          blue hues and battered by the most extreme winds in the solar system. Classified as an ice giant, Neptune
+          orbits more than 30 times farther from the Sun than Earth, making it a dark, frigid realm where sunlight is
+          nearly 900 times dimmer than on our home planet.
+
+          Discovered in 1846 through mathematical predictions rather than direct observation, Neptune was the first
+          planet to be found in this way. Astronomers noticed irregularities in Uranus’ orbit and, using calculations by
+          French mathematician Urbain Le Verrier, German astronomer Johann Galle located Neptune exactly where
+          predicted. Just 17 days later, its largest moon, Triton, was discovered, hinting at a rich and complex
+          planetary system.
+
+          Neptune is massive—about four times wider than Earth, with an equatorial diameter of 30,775 miles (49,528
+          kilometers). If Earth were the size of a nickel, Neptune would be a baseball. The planet is about 2.8 billion
+          miles (4.5 billion kilometers) from the Sun, meaning sunlight takes roughly four hours to reach it.
+
+          A single Neptunian day lasts just 16 hours, but a year drags on for 165 Earth years. Because of its 28-degree
+          axial tilt, Neptune experiences seasons like Earth and Mars—but each lasts over 40 years due to its vast
+          orbital path.
+
+          Neptune’s atmosphere, composed mainly of hydrogen, helium, and methane, is strikingly dynamic. Methane gives
+          the planet its blue color by absorbing red light and reflecting blue, although Voyager 2 images enhanced the
+          contrast to reveal atmospheric features more clearly. Despite receiving very little solar energy, Neptune
+          boasts the fastest winds in the solar system—reaching speeds over 1,200 miles per hour (2,000 kilometers per
+          hour). These supersonic gales whip clouds of frozen methane across its skies, far outpacing even Jupiter’s
+          fierce storms. In 1989, Voyager 2 observed a massive, Earth-sized storm known as the Great Dark Spot—though it
+          has since vanished, new ones continue to appear.
+
+          Neptune has no solid surface. Beneath its atmosphere lies a hot, dense mixture of water, ammonia, and methane
+          ices above a rocky core roughly equal to Earth in mass. Some scientists believe a superheated ocean of water
+          may exist deep inside, kept in a liquid state by immense pressure.
+
+          The planet also possesses a powerful and oddly tilted magnetic field—27 times stronger than Earth’s and
+          misaligned by 47 degrees with its axis of rotation. Like Uranus, this misalignment causes the magnetosphere to
+          wobble wildly as the planet spins.
+
+          Neptune’s largest moon, Triton, orbits in the opposite direction of Neptune’s rotation, suggesting it was
+          likely a captured object. Despite surface temperatures plunging to -391°F (-235°C), Voyager 2 observed active
+          geysers spewing icy material five miles (eight kilometers) high, making Triton one of the most geologically
+          active moons in the outer solar system. Its thin, nitrogen-rich atmosphere appears to be warming, though the
+          cause remains unknown.
+
+          In total, Neptune has 16 known moons, all named after sea deities from Greek mythology in honor of the Roman
+          god Neptune. Surrounding the planet is a system of at least five main rings—Galle, Leverrier, Lassell, Arago,
+          and Adams—plus four distinctive clumps of dust known as arcs. These arcs—Liberté, Egalité, Fraternité, and
+          Courage—persist mysteriously without dispersing, likely stabilized by the nearby moon Galatea.
+
+          Formed about 4.5 billion years ago alongside the rest of the solar system, Neptune may have originated closer
+          to the Sun before migrating outward to its current, frigid orbit. As the densest of the giant planets, Neptune
+          continues to fascinate scientists with its dynamic storms, complex magnetic environment, and the potential
+          secrets hidden beneath its icy clouds.
+
+          Despite being invisible to the naked eye and residing in a remote corner of our cosmic neighborhood, Neptune
+          remains a captivating symbol of the unknown—an icy enigma at the edge of the solar system, swirling with
+          beauty, power, and mystery.
         </p>
         <button class="toggle-text">Show more ↓</button>
         <button class="sound-button" data-audio="../audio/mercury.mp3">🔊</button>
@@ -38,4 +519,5 @@
 
   <script src="../js/planets.js"></script>
 </body>
+
 </html>

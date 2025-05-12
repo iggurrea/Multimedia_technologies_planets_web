@@ -48,11 +48,11 @@ function initMercuryModel() {
 );
 
 
-  const material = new THREE.MeshPhongMaterial({ map: texture });
+  const material = new THREE.MeshStandardMaterial({ map: texture });
+  const mercury = new THREE.Mesh(geometry, material);
   const ambientLight = new THREE.AmbientLight(0xffffff, 0.4); // luz suave global
 scene.add(ambientLight);
 
-  const mercury = new THREE.Mesh(geometry, material);
   scene.add(mercury);
 
   const light = new THREE.PointLight(0xffffff, 1);
