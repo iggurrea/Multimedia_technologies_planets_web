@@ -14,6 +14,56 @@ const questions = [
     options: ["1", "2", "3", "None"],
     answer: "1",
   },
+  {
+    question: "Which planet has the most prominent ring system?",
+    options: ["Uranus", "Jupiter", "Saturn", "Neptune"],
+    answer: "Saturn"
+  },
+  {
+    question: "Which planet is closest to the Sun?",
+    options: ["Earth", "Venus", "Mercury", "Mars"],
+    answer: "Mercury"
+  },
+  {
+    question: "How many planets are in our solar system?",
+    options: ["8", "9", "10", "7"],
+    answer: "8"
+  },
+  {
+    question: "Which planet has a day that lasts longer than its year?",
+    options: ["Venus", "Mercury", "Neptune", "Mars"],
+    answer: "Venus"
+  },
+  {
+    question: "What is the smallest planet in our solar system?",
+    options: ["Mars", "Pluto", "Mercury", "Earth"],
+    answer: "Mercury"
+  },
+  {
+    question: "Which planet is tilted on its side, causing extreme seasons?",
+    options: ["Uranus", "Neptune", "Saturn", "Venus"],
+    answer: "Uranus"
+  },
+  {
+    question: "What is the name of the fifth planet from the Sun?",
+    options: ["Mars", "Saturn", "Jupiter", "Uranus"],
+    answer: "Jupiter"
+  },
+  {
+    question: "Which planet is known for its Great Red Spot, a massive storm?",
+    options: ["Neptune", "Mars", "Saturn", "Jupiter"],
+    answer: "Jupiter"
+  },
+  {
+    question: "Which two planets do not have moons?",
+    options: ["Mercury and Venus", "Earth and Mars", "Jupiter and Saturn", "Uranus and Neptune"],
+    answer: "Mercury and Venus"
+  },
+  {
+    question: "What is the name of the dwarf planet that was once considered the ninth planet?",
+    options: ["Eris", "Pluto", "Ceres", "Haumea"],
+    answer: "Pluto"
+  },
 ];
 
 let currentQuestionIndex = 0;
